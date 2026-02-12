@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مشاريع مسفر الحارثي - تطوير ويب، قواعد بيانات، أمن سيبراني">
+    <title>المشاريع - Mesfer Al-Harthi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Mesfer Al-Harthi</a>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="index.html" data-i18n="home">الرئيسية</a></li>
+                <li><a href="about.html" data-i18n="about">من أنا</a></li>
+                <li><a href="skills.html" data-i18n="skills">المهارات</a></li>
+                <li><a href="certificates.html" data-i18n="certificates">الشهادات</a></li>
+                <li><a href="projects.html" data-i18n="projects">المشاريع</a></li>
+                <li><a href="achievements.html" data-i18n="achievements">الإنجازات</a></li>
+                <li><a href="contact.html" data-i18n="contact">التواصل</a></li>
+                <li><a href="cv.html" data-i18n="cv">السيرة الذاتية</a></li>
+                <li><button class="lang-toggle" id="langToggle">English</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="section" style="padding-top: 8rem;">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title gradient-text" data-i18n="projectsTitle">المشاريع</h1>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="text-center mb-4" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <button class="btn btn-primary filter-btn active" onclick="filterProjects('all')" data-i18n="allProjects">الكل</button>
+                <button class="btn btn-outline glass-card filter-btn" onclick="filterProjects('web')" data-i18n="webProjects">تطوير الويب</button>
+                <button class="btn btn-outline glass-card filter-btn" onclick="filterProjects('database')" data-i18n="databaseProjects">قواعد البيانات</button>
+                <button class="btn btn-outline glass-card filter-btn" onclick="filterProjects('cybersecurity')" data-i18n="cybersecurityProjects">الأمن السيبراني</button>
+                <button class="btn btn-outline glass-card filter-btn" onclick="filterProjects('academic')" data-i18n="academicProjects">مشاريع أكاديمية</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-3">
+                <!-- Project 1 -->
+                <div class="card glass-card glow-border project-card" data-category="web,database">
+                    <img src="https://private-us-east-1.manuscdn.com/sessionFile/nQVitndR6qtCTX6XLMXcsN/sandbox/BbrpiyQOx7dLLADVkV98Iw-img-2_1770807323000_na1fn_cHJvamVjdC13ZWItZGV2ZWxvcG1lbnQ.png?x-oss-process=image/resize,w_800" alt="Project" class="project-image">
+                    <h3 class="card-title">موقع جمعية الحرف السابع</h3>
+                    <p class="card-description mb-3">موقع احترافي لجمعية الحرف السابع يحتوي على صفحات تعريفية وخدمات وواجهة تواصل.</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                    <div style="display: flex; gap: 0.75rem;">
+                        <a href="#" class="btn btn-outline glass-card" style="flex: 1;">
+                            <i data-lucide="github"></i>
+                            <span data-i18n="viewGithub">GitHub</span>
+                        </a>
+                        <a href="#" class="btn btn-outline glass-card" style="flex: 1;">
+                            <i data-lucide="external-link"></i>
+                            <span data-i18n="viewDemo">معاينة</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card glass-card glow-border project-card" data-category="web">
+                    <img src="https://private-us-east-1.manuscdn.com/sessionFile/nQVitndR6qtCTX6XLMXcsN/sandbox/BbrpiyQOx7dLLADVkV98Iw-img-3_1770807317000_na1fn_cHJvamVjdC1kYXRhYmFzZQ.png?x-oss-process=image/resize,w_800" alt="Project" class="project-image">
+                    <h3 class="card-title">موقع جمعية خيرية</h3>
+                    <p class="card-description mb-3">إنشاء موقع من الصفر لجمعية خيرية مع تحسين الظهور بمحركات البحث.</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">PHP</span>
+                    </div>
+                    <div style="display: flex; gap: 0.75rem;">
+                        <a href="#" class="btn btn-outline glass-card" style="flex: 1;">
+                            <i data-lucide="github"></i>
+                            <span data-i18n="viewGithub">GitHub</span>
+                        </a>
+                        <a href="#" class="btn btn-outline glass-card" style="flex: 1;">
+                            <i data-lucide="external-link"></i>
+                            <span data-i18n="viewDemo">معاينة</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card glass-card glow-border project-card" data-category="academic">
+                    <img src="https://private-us-east-1.manuscdn.com/sessionFile/nQVitndR6qtCTX6XLMXcsN/sandbox/BbrpiyQOx7dLLADVkV98Iw-img-4_1770807316000_na1fn_cHJvamVjdC1jeWJlcnNlY3VyaXR5.png?x-oss-process=image/resize,w_800" alt="Project" class="project-image">
+                    <h3 class="card-title">مشروع جهاز خدمة ذاتية</h3>
+                    <p class="card-description mb-3">مشروع جامعي يهدف لإنشاء جهاز خدمة ذاتية لتسهيل تقديم الخدمات بطريقة رقمية.</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+                        <span class="tag">Hardware</span>
+                        <span class="tag">Software Integration</span>
+                        <span class="tag">UI/UX</span>
+                    </div>
+                    <div style="display: flex; gap: 0.75rem;">
+                        <a href="#" class="btn btn-outline glass-card" style="flex: 1;">
+                            <i data-lucide="github"></i>
+                            <span data-i18n="viewGithub">GitHub</span>
+                        </a>
+                        <a href="#" class="btn btn-outline glass-card" style="flex: 1;">
+                            <i data-lucide="external-link"></i>
+                            <span data-i18n="viewDemo">معاينة</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p>&copy; 2026 Mesfer Al-Harthi. <span data-i18n="allRightsReserved">جميع الحقوق محفوظة</span></p>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="about.html" data-i18n="about">من أنا</a></li>
+                    <li><a href="projects.html" data-i18n="projects">المشاريع</a></li>
+                    <li><a href="contact.html" data-i18n="contact">التواصل</a></li>
+                </ul>
+                <div class="social-links">
+                    <a href="#" class="social-link glass-card"><i data-lucide="linkedin"></i></a>
+                    <a href="#" class="social-link glass-card"><i data-lucide="github"></i></a>
+                    <a href="#" class="social-link glass-card"><i data-lucide="mail"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+    <script src="js/main.js"></script>
+</body>
+</html>
