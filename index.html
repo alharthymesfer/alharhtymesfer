@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مسفر محمد مسفر الحارثي - طالب تقنية معلومات | مهتم بالأمن السيبراني وتطوير الويب">
+    <meta name="keywords" content="مسفر الحارثي, تقنية معلومات, أمن سيبراني, تطوير ويب, portfolio">
+    <meta name="author" content="Mesfer Al-Harthi">
+    <title>Mesfer Al-Harthi - Portfolio</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Mesfer Al-Harthi</a>
+            
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="index.html" data-i18n="home">الرئيسية</a></li>
+                <li><a href="about.html" data-i18n="about">من أنا</a></li>
+                <li><a href="skills.html" data-i18n="skills">المهارات</a></li>
+                <li><a href="certificates.html" data-i18n="certificates">الشهادات</a></li>
+                <li><a href="projects.html" data-i18n="projects">المشاريع</a></li>
+                <li><a href="achievements.html" data-i18n="achievements">الإنجازات</a></li>
+                <li><a href="contact.html" data-i18n="contact">التواصل</a></li>
+                <li><a href="cv.html" data-i18n="cv">السيرة الذاتية</a></li>
+                <li><button class="lang-toggle" id="langToggle">English</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="gradient-text" data-i18n="heroTitle">مسفر محمد مسفر الحارثي</h1>
+                <p class="text-muted" data-i18n="heroSubtitle">طالب تقنية معلومات | مهتم بالأمن السيبراني وتطوير الويب</p>
+                <p data-i18n="heroDescription">طالب تقنية معلومات مهتم بالأمن السيبراني وتطوير الويب، أعمل على مشاريع تقنية وأطور مهاراتي باستمرار.</p>
+                
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary">
+                        <i data-lucide="folder"></i>
+                        <span data-i18n="viewProjects">مشاهدة المشاريع</span>
+                    </a>
+                    <a href="cv.html" class="btn btn-outline glass-card">
+                        <i data-lucide="download"></i>
+                        <span data-i18n="downloadCV">تحميل السيرة الذاتية</span>
+                    </a>
+                </div>
+                
+                <!-- Specializations -->
+                <div class="grid grid-3 mt-8">
+                    <div class="card glass-card glow-border">
+                        <div class="card-icon glass-card" style="color: var(--primary-light);">
+                            <i data-lucide="globe"></i>
+                        </div>
+                        <h3 class="card-title">Full Stack</h3>
+                        <p class="card-description">تطوير مواقع ويب كاملة باستخدام أحدث التقنيات</p>
+                    </div>
+                    
+                    <div class="card glass-card glow-border">
+                        <div class="card-icon glass-card" style="color: var(--accent);">
+                            <i data-lucide="shield"></i>
+                        </div>
+                        <h3 class="card-title">Cybersecurity</h3>
+                        <p class="card-description">حماية الأنظمة والبيانات من التهديدات السيبرانية</p>
+                    </div>
+                    
+                    <div class="card glass-card glow-border">
+                        <div class="card-icon glass-card" style="color: #3b82f6;">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <h3 class="card-title">Web Development</h3>
+                        <p class="card-description">بناء تطبيقات ويب تفاعلية وسريعة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p>&copy; 2026 Mesfer Al-Harthi. <span data-i18n="allRightsReserved">جميع الحقوق محفوظة</span></p>
+                </div>
+                
+                <ul class="footer-links">
+                    <li><a href="about.html" data-i18n="about">من أنا</a></li>
+                    <li><a href="projects.html" data-i18n="projects">المشاريع</a></li>
+                    <li><a href="contact.html" data-i18n="contact">التواصل</a></li>
+                </ul>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link glass-card" title="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link glass-card" title="GitHub">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="#" class="social-link glass-card" title="Email">
+                        <i data-lucide="mail"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
